@@ -23,6 +23,30 @@
  This script initializes the plugin, making it known to QGIS.
 """
 
+import sip
+for api in ["QDate", "QDateTime", "QString",
+    "QTextStream", "QTime", "QUrl", "QVariant"]:
+    sip.setapi(api, 2)
+
+import os, sys
+
+path_root = os.path.join(os.path.dirname(__file__))
+sys.path.append(path_root)
+
+# path to external libs
+path_boto = os.path.join(
+    os.path.dirname(__file__),
+    'ext_libs/boto-2.38.0')
+path_filechunkio = os.path.join(
+    os.path.dirname(__file__),
+    'ext_libs/filechunkio-1.6')
+path_requests = os.path.join(
+    os.path.dirname(__file__),
+    'ext_libs/requests-2.7.0')
+sys.path.append(path_boto)
+sys.path.append(path_filechunkio)
+sys.path.append(path_requests)
+
 # Qt classes
 # from PyQt4.QtCore import *
 # from PyQt4.QtGui import *
@@ -39,7 +63,6 @@ from gui.img_uploader_wizard import ImgUploaderWizard
 from gui.img_search_dialog import ImgSearchDialog
 from gui.setting_dialog import SettingDialog
 
-import os, sys
 import webbrowser
 
 

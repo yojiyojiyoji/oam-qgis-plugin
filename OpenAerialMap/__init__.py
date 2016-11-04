@@ -23,6 +23,7 @@
  This script initializes the plugin, making it known to QGIS.
 """
 
+"""
 import sys
 import os
 
@@ -42,7 +43,7 @@ path_requests = os.path.join(
 sys.path.append(path_boto)
 sys.path.append(path_filechunkio)
 sys.path.append(path_requests)
-
+"""
 
 # noinspection PyPep8Naming
 def classFactory(iface):  # pylint: disable=invalid-name

@@ -1,11 +1,22 @@
 For contributors
 =================================
 
-Under Construction
+.. toctree::
+   :maxdepth: 1
 
-.. following part is for autogeneration
-.. automodule  double-colon here  oam_main
-.. autoclass  double-colon here  OpenAerialMap
-..   :members:
+   doc_oam_main
+   doc_img_uploader_wizard
 
-..   :method:
+
+.. automodule :: oam_main
+.. autoclass :: OpenAerialMap
+    :members:
+
+    :method:
+
+
+.. automodule :: gui.img_uploader_wizard
+.. autoclass :: ImgUploaderWizard
+    :members:
+
+    :method:

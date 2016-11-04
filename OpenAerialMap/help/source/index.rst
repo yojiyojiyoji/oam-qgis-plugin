@@ -9,11 +9,11 @@ Welcome to OpenAerialMap's documentation!
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    about
    help_img_uploader
-   help_img_search_browse
+   help_img_search_browser
    help_settings
    codes
 
